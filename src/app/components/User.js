@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class User extends Component {
-    render(){
+export const User = (props) => {
         return (
             <div>
                 <div className="row">
@@ -11,10 +10,9 @@ export class User extends Component {
                 </div>
                 <div className="row">
                     <div className="col-xl-12">
-                        <p>User name: {this.props.username}</p>
+                        <p>User name: {props.username}</p>
                     </div>
                 </div>
             </div>
-        )
-    }
-}
+        );
+};
